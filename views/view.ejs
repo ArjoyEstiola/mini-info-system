@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Record</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1>Record Details</h1>
+      <a href="/">&larr; Back to List</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <div class="detail-row"><div class="label">ID</div><div><%= record.id %></div></div>
+      <div class="detail-row"><div class="label">Name</div><div><%= record.name %></div></div>
+      <div class="detail-row"><div class="label">Email</div><div><%= record.email %></div></div>
+      <div class="detail-row"><div class="label">Phone</div><div><%= record.phone %></div></div>
+      <div class="detail-row"><div class="label">Department</div><div><%= record.department %></div></div>
+
+      <br>
+      <a class="btn-primary" href="/records/<%= record.id %>/edit">Edit</a>
+      <a class="btn-secondary" href="/">Back</a>
+    </div>
+  </div>
+</body>
+</html>

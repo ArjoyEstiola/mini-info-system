@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Record</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1>Add New Record</h1>
+      <a href="/">&larr; Back to List</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <form class="record-form" action="/records/add" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="e.g. Juan Dela Cruz">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="e.g. juan@example.com">
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone" placeholder="e.g. 0917-123-4567">
+
+        <label for="department">Department</label>
+        <input type="text" id="department" name="department" placeholder="e.g. IT">
+
+        <button class="btn-primary" type="submit">Save Record</button>
+        <a class="btn-secondary" href="/">Cancel</a>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

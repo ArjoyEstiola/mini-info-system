@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Information System</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1>Mini Information System</h1>
+      <a href="/records/add">+ Add Record</a>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <% if (query.msg === 'added') { %>
+      <div class="alert alert-success">Record added successfully.</div>
+    <% } else if (query.msg === 'updated') { %>
+      <div class="alert alert-success">Record updated successfully.</div>
+    <% } else if (query.msg === 'deleted') { %>
+      <div class="alert alert-success">Record deleted successfully.</div>
+    <% } %>
+
+    <div class="card">
+      <% if (records.length === 0) { %>
+        <div class="empty-state">
+          No records yet. <a href="/records/add">Add your first record</a>.
+        </div>
+      <% } else { %>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Department</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% records.forEach(r => { %>
+              <tr>
+                <td><%= r.id %></td>
+                <td><%= r.name %></td>
+                <td><%= r.email %></td>
+                <td><%= r.phone %></td>
+                <td><%= r.department %></td>
+                <td class="actions">
+                  <a class="btn-view" href="/records/<%= r.id %>/view">View</a>
+                  <a class="btn-edit" href="/records/<%= r.id %>/edit">Edit</a>
+                  <form action="/records/<%= r.id %>/delete" method="POST" style="display:inline"
+                        onsubmit="return confirm('Delete this record?');">
+                    <button class="btn-delete" type="submit">Delete</button>
+                  </form>
+                </td>
+              </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      <% } %>
+    </div>
+  </div>
+</body>
+</html>

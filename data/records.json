@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Juan Dela Cruz",
+    "email": "juan.delacruz@example.com",
+    "phone": "0917-123-4567",
+    "department": "IT"
+  },
+  {
+    "id": 3,
+    "name": "Pedro Reyes",
+    "email": "pedro.reyes@example.com",
+    "phone": "0919-345-6789",
+    "department": "Finance"
+  }
+]
