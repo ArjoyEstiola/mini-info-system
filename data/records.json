@@ -7,6 +7,7 @@
     "department": "IT"
   },
   {
+<<<<<<< HEAD
     "id": 2,
     "name": "Maria Santos",
     "email": "maria.santos@example.com",
@@ -14,11 +15,14 @@
     "department": "HR"
   },
   {
+=======
+>>>>>>> 7d06ea87b6518f447d31a24465ea0ff1c8ebae05
     "id": 3,
     "name": "Pedro Reyes",
     "email": "pedro.reyes@example.com",
     "phone": "0919-345-6789",
     "department": "Finance"
+<<<<<<< HEAD
   },
   {
     "id": 4,
@@ -26,5 +30,7 @@
     "email": "juan@gmail.com",
     "phone": "123123",
     "department": "IT"
+=======
+>>>>>>> 7d06ea87b6518f447d31a24465ea0ff1c8ebae05
   }
 ]
