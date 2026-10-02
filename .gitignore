@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 node_modules/
 .env
 .env.*
 !.env.example
-=======
-node_modules/
->>>>>>> 7d06ea87b6518f447d31a24465ea0ff1c8ebae05

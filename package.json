@@ -8,14 +8,9 @@
     "dev": "nodemon server.js"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "dotenv": "^18.0.4",
+    "dotenv": "^18.0.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "mysql2": "^3.24.4"
-=======
-    "express": "^4.19.2",
-    "ejs": "^3.1.10"
->>>>>>> 7d06ea87b6518f447d31a24465ea0ff1c8ebae05
+    "mysql2": "^3.24.5"
   }
 }
